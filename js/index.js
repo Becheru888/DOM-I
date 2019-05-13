@@ -57,6 +57,7 @@ anchor[3].innerText= siteContent["nav"]["nav-item-4"]
 anchor[4].innerText= siteContent["nav"]["nav-item-5"]
 anchor[5].innerText= siteContent["nav"]["nav-item-6"]
 
+//NEW CONTENT
 anchor.forEach(element => {element.style.color = 'green'})
 
 let navi = document.getElementsByTagName('nav')
