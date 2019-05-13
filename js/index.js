@@ -49,7 +49,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Navigation
 
-let anchor = document.querySelectorAll("a");
+let anchor = document.querySelectorAll("a")
 anchor[0].innerText= siteContent["nav"]["nav-item-1"]
 anchor[1].innerText= siteContent["nav"]["nav-item-2"]
 anchor[2].innerText= siteContent["nav"]["nav-item-3"]
@@ -59,6 +59,14 @@ anchor[5].innerText= siteContent["nav"]["nav-item-6"]
 
 anchor.forEach(element => {element.style.color = 'green'})
 
+let navi = document.getElementsByTagName('nav')
+let newItem = document.createElement('a')
+newItem.textContent = 'Raport'
+navi[0].appendChild(newItem)
+
+let newItem2 = document.createElement('a')
+newItem2.textContent = 'Raport'
+navi[0].prepend(newItem2)
 
 
 //CTA
