@@ -49,13 +49,16 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Navigation
 
-let anchor = document.getElementsByTagName("a");
+let anchor = document.querySelectorAll("a");
 anchor[0].innerText= siteContent["nav"]["nav-item-1"]
 anchor[1].innerText= siteContent["nav"]["nav-item-2"]
 anchor[2].innerText= siteContent["nav"]["nav-item-3"]
 anchor[3].innerText= siteContent["nav"]["nav-item-4"]
 anchor[4].innerText= siteContent["nav"]["nav-item-5"]
 anchor[5].innerText= siteContent["nav"]["nav-item-6"]
+
+anchor.forEach(element => {element.style.color = 'green'})
+
 
 
 //CTA
